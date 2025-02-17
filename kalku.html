@@ -1,0 +1,75 @@
+<html>
+<head>
+<style type="text/css">
+    .hem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+     background-color: skyblue;
+
+    }
+    #LILI{
+    display: block;
+    height: 50px;
+    width: 174px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 28px;
+    color: black;
+    text-align: right;
+    font-weight: 400;
+    }
+    fieldset{
+        background-color: lightpink;
+    }
+    .tombol{
+        background-color: lightblue;
+        box-shadow:5px 5px 5px black ;
+        font-size: 15px;
+        height: 30px;
+       width: 30px;
+       margin: 2px;
+    }
+</style>
+</head>
+<body>
+<div class="hem">
+    <fieldset>
+        <h3>UKK GESS</h3>
+        <form name="c">
+       <input id="LILI" type="text" name="d" placeholder="" readonly><br>
+
+          <input class="tombol" type="button" value="9" onclick="c.d.value += '9'">
+          <input class="tombol"type="button" value="8" onclick="c.d.value += '8'"> 
+          <input class="tombol" type="button" value="7" onclick="c.d.value += '7'">
+          <input class="tombol" type="button" value="+" onclick="c.d.value += '+'">
+          <input class="tombol"id="clearButton" class="button" type="button" value="C" onclick="c.d.value = c.d.value.slice(0, -1)  "> 
+
+          <br>
+          <input  class="tombol"type="button" value="6" onclick="c.d.value += '6'"> 
+          <input  class="tombol"type="button" value="5" onclick="c.d.value += '5'"> 
+          <input class="tombol"type="button" value="4" onclick="c.d.value += '4'"> 
+          <input  class="tombol"type="button" value="-" onclick="c.d.value += '-'">
+          <input  class="tombol"id="clearButton" class="button" type="button" value="D" onclick="c.d.value = c.d.value = ' '  "> 
+         
+          <br> 
+          <input  class="tombol"type="button" value="3" onclick="c.d.value += '3'"> 
+          <input  class="tombol"type="button" value="2" onclick="c.d.value += '2'"> 
+          <input  class="tombol"type="button" value="1" onclick="c.d.value += '1'">
+          <input  class="tombol"type="button" value="/" onclick="c.d.value += '/'">
+          <input  class="tombol"type="button" value="." onclick="c.d.value += ','">
+
+         <br>
+          <input  class="tombol"type="button" value="0" onclick="c.d.value += '0'">
+          <input class="tombol" type="button" value="%" onclick="c.d.value += '%'">
+                
+              
+          <input class="tombol" type="button" value="x" onclick="c.d.value += '*'">
+            <input  class="tombol"type="button" value="=" onclick="c.d.value = eval (c.d.value.replace('%','/100'))">
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
